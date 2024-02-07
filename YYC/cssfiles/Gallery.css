@@ -1,0 +1,89 @@
+header {
+  background-color: #b3baff; /*#73d8ae; Set the background color*/
+  color: #fffff0; /* Set the text color */
+  position: fixed; /* Fix the header position */
+  width: 100vw; /* Make it span the full width of the viewport */
+  height: 6vh;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  margin-right: auto;
+  margin-left: 1cm;
+  color: white;
+}
+
+body {
+  margin: 8vh 0vw 0vw 0vw;
+  background-color: white;
+}
+
+p {
+  color: rgb(0, 0, 0);
+}
+
+.slideshow-container {
+  width: 50vw;
+  top: 0;
+  left: 10vw;
+  z-index: 1;
+  margin-top: 2vh;
+  margin-left: 25%;
+  /* border: solid;
+  border-color: blue; */
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #b3baff;
+}
+
+.fade {
+  animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tile-map {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.tile {
+  background-color: #b3baff;
+  color: #fffff0;
+  padding: 12px;
+  text-align: center;
+  position: relative;
+  border-radius: 1px;
+}
+
+.folder-name {
+  font-weight: bold;
+  cursor: pointer; /* Add pointer cursor to indicate clickability */
+  color: inherit; /* Inherit text color from the parent (.tile) */
+  text-decoration: none; /* Remove default underline for links */
+}
+
+.folder-name:hover {
+  color: #ff5500; /* Change text color on hover */
+}

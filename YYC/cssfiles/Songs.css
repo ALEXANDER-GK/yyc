@@ -1,0 +1,51 @@
+header {
+  padding: 0.1cm;
+  height: 9vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6vh;
+  background-color: #b3baff;
+  border-radius: 2cm;
+}
+
+h4 {
+  margin-right: auto;
+  margin-left: 1cm;
+  color: white;
+}
+
+#searchbar {
+  max-width: 20vw;
+  padding: 3px;
+  background-color: #fffff0;
+  border-radius: 10px;
+  border-color: deepskyblue;
+}
+
+#searchicon {
+  padding-left: 3px;
+  height: 0.6cm;
+  margin-right: 0.8cm;
+}
+
+body {
+  margin: 2vw 2vw 0cm 2vw;
+  /* background-color: #fffff0; */
+  background-color: white;
+}
+
+ul {
+  color: deepskyblue;
+}
+
+#lyrics-container {
+  padding: 2vh 10vw 1vw 5vw;
+  display: block;
+  margin-top: 20px;
+  background-color: white;
+  color: rgb(0, 0, 0);
+}

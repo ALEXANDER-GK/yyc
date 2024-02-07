@@ -1,0 +1,131 @@
+header {
+  background-color: #b3baff; /*#73d8ae; Set the background color*/
+  color: #fffff0; /* Set the text color */
+  position: fixed; /* Fix the header position */
+  width: 100vw; /* Make it span the full width of the viewport */
+  height: 9vh;
+  top: 0; /* Position it at the top of the viewport */
+  z-index: 1000; /* Set a high z-index to ensure it's on top of other elements */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  font-size: 350%;
+  font-weight: 450;
+  text-align: left; /* Center-align text */
+  font-family: "Rubik Maps";
+  font-style: normal;
+  padding-left: 1cm;
+  letter-spacing: 3px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav {
+  display: flex;
+  background-color: #f0f0f0; /*#f0f0f0*/
+  width: 100vw;
+  margin-bottom: 70px;
+}
+
+header.hidden {
+  transform: translateY(-100%);
+}
+
+img {
+  height: 1cm;
+}
+
+body {
+  background-color: white; /*#fff0f5*/
+  margin-top: 10vh;
+  margin-left: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  width: 100vw; /* Ensure full width */
+}
+
+nav li {
+  flex-grow: 1; /* Equal width distribution */
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  width: 100%; /* Ensure full width */
+  display: block; /* Make it a block-level element */
+}
+
+.wrapper {
+  margin: 0.5cm auto;
+  width: 85%;
+}
+
+.text {
+  color: #000000;
+}
+
+.text p {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-size: medium;
+  letter-spacing: 1px;
+  padding-left: 0.5cm;
+  width: 100%;
+}
+
+#churchlogo {
+  height: auto;
+  max-width: 100%;
+  width: 25vh;
+  border-radius: 10%;
+  float: inline-end;
+  margin-right: 2vw;
+  filter: grayscale(40%);
+  border: 3px solid #b3baff;
+}
+
+/* #para::first-letter {
+  font-family: "Rubik Maps";
+  font-size: 2em; 
+  color: #000000; 
+  float: left; 
+} */
+
+#gradient {
+  width: 100vw;
+  height: 5vh;
+  background: radial-gradient(circle, #a9a1c6, #b3baff);
+  padding-top: 40px;
+}
+
+footer {
+  background: radial-gradient(circle, #a9a1c6, #b3baff); /*#8bb7ff */
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  gap: 20px;
+  width: 100vw;
+  height: 30vh;
+  margin: 0;
+  padding-top: 20px;
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.footer-item {
+  text-align: center;
+}
+
+.footer-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
